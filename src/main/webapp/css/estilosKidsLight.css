@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.github-icon {
+	width: 32px;
+	height: auto;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
+.sidenav {
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	border-radius: 10px;
+	background: #FFB74D;
+}
+
+.logoArtemisa {
+	height: 60px;
+	width: 230px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 10px;
+	margin: 40px 0 20px 10px;
+	background-color: #4FC3F7;
+}
+
+.btnSidebar {
+	height: 50px;
+	width: 250px;
+	position: relative;
+	padding-left: 4rem;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+.btnSidebar a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: bold;
+}
+
+.imgLenguajes, .imgOport {
+	border-radius: 20px;
+	width: 250px;
+	max-width: 100%;
+	height: auto;
+}
+
+.footertxt {
+	font-size: 14px;
+	color: #FF4081;
+}
+
+.btnSidebar i, .btnSidebar span {
+	color: #FFFFFF;
+}
+
+.txt1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #F06292;
+}
+
+.txt2 {
+	font-size: 20px;
+	color: #BA68C8;
+}
+
+.txt3 {
+	font-size: 15px;
+	color: #FF8A65;
+	font-weight: normal;
+}
+
+.txt4 {
+	font-size: 15px;
+	font-weight: normal;
+	color: #4DB6AC;
+}
+
+.flecha {
+	width: 15px;
+	height: 15px;
+}
+
+.main {
+	margin-left: 150px;
+	width: 900px;
+}
+
+.mainCardArriba, .mainCardAbajo {
+	margin-right: 100px;
+	margin-left: -10px;
+	border-radius: 10px;
+	width: 850px;
+	background-color: #FFF176;
+}
+
+.dropdown-menu {
+	z-index: 1050;
+}
+
+.logoArtemisaColor {
+	background-color: #FFD54F;
+	background-size: contain;
+	width: 500px;
+	height: 200px;
+}
+
+.svg-inline--fa.fa-w-16 {
+	width: 1em;
+}
+
+.dropdown-toggle {
+	text-align: left;
+}
+
+.btnSidebar .dropdown, .btnSidebar .dropdown-menu {
+	width: 100%;
+}

@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+.github-icon {
+	width: 32px;
+	height: auto;
+	vertical-align: middle;
+	margin-left: 8px;
+}
+
+.sidenav {
+	width: 250px;
+	height: 100vh;
+	position: fixed;
+	border-radius: 10px;
+	background: rgb(54, 52, 50, 1);
+}
+
+.logoArtemisa {
+	padding: 0;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	height: 60px;
+	width: 230px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin: 40px 0 20px 10px;
+	margin-top: 40px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	background: rgba(101, 121, 101, .32);
+	background-image: initial;
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: rgba(101, 121, 101, 0.32);
+}
+
+.btnSidebar {
+	height: 50px;
+	width: 250px;
+	position: relative;
+	padding-left: 4rem;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+.btnSidebar a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.imgLenguajes {
+	height: 250px;
+	width: 250px;
+	max-width: 100%;
+	height: auto;
+}
+
+.imgOport {
+	border-radius: 50%;
+	height: 250px;
+	width: 250px;
+	max-width: 100%;
+	height: auto;
+}
+
+.footertxt {
+	font-size: 14px;
+}
+
+.btnSidebar i, .btnSidebar span {
+	color: white;
+}
+
+.txt1 {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.txt2 {
+	font-size: 20px;
+}
+
+.txt3 {
+	font-size: 15px;
+	color: gray;
+	font-weight: normal;
+}
+
+.txt4 {
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.flecha {
+	width: 15px;
+	height: 15px;
+}
+
+.main {
+	margin-left: 150px;
+	width: 900px;
+}
+
+.mainCardArriba {
+	margin-right: 100px;
+	margin-left: -10px;
+	border-radius: 1%;
+	width: 850px;
+	border-top: none !important;
+	border-right: none !important;
+	border-bottom:  none !important;
+}
+
+.mainCardAbajo {
+	margin-right: 100px;
+	margin-left: -10px;
+	border-radius: 1%;
+	width: 850px;
+	border-top: none !important;
+	border-right: none !important;
+	
+}
+
+.dropdown-menu {
+	z-index: 1050;
+}
+
+.logoArtemisaColor {
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat: no-repeat;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+	background-size: contain;
+	width: 500px;
+	height: 200px;
+}
+
+.svg-inline--fa.fa-w-16 {
+	width: 1em;
+}
+
+.dropdown-toggle {
+	text-align: left;
+}
+
+.btnSidebar .dropdown {
+	width: 100%;
+}
+
+.btnSidebar .dropdown-menu {
+	width: 100%;
+}
