@@ -12,7 +12,7 @@
 	height: 100vh;
 	position: fixed;
 	border-radius: 10px;
-	background: #FFB74D;
+	background-color: #FFD54F;
 }
 
 .logoArtemisa {
@@ -88,6 +88,10 @@
 	height: 15px;
 }
 
+.background{
+	background-color: #B4F0AF;
+}
+
 .main {
 	margin-left: 150px;
 	width: 900px;
@@ -98,9 +102,12 @@
 	margin-left: -10px;
 	border-radius: 10px;
 	width: 850px;
-	background-color: #FFF176;
 }
 
+.fondoamarillo{
+	
+	background-color: #FFD54F;
+}
 .dropdown-menu {
 	z-index: 1050;
 }
