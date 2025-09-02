@@ -118,6 +118,20 @@
 	width: 900px;
 }
 
+.temarioSite {
+	background-color: rgba(101, 121, 101, 0.32);
+}
+
+.mainCardArribaTemario {
+	margin-right: 100px;
+	margin-left: -10px;
+	border-radius: 1%;
+	width: 850px;
+	border-top: none !important;
+	border-right: none !important;
+	border-bottom: none !important;
+}
+
 .mainCardArriba {
 	margin-right: 100px;
 	margin-left: -10px;
@@ -125,7 +139,7 @@
 	width: 850px;
 	border-top: none !important;
 	border-right: none !important;
-	border-bottom:  none !important;
+	border-bottom: none !important;
 }
 
 .mainCardAbajo {
@@ -135,7 +149,6 @@
 	width: 850px;
 	border-top: none !important;
 	border-right: none !important;
-	
 }
 
 .dropdown-menu {

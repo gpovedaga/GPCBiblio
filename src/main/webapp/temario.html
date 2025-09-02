@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Temario</title>
+<title>Biblioteca Artemisa</title>
 
 <link rel="icon" href="assets/iconoArtemisa.png" type="image/png">
 
@@ -26,10 +26,318 @@
 	integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
 	crossorigin="anonymous"></script>
 
-<link href="css/estilos.css" rel="stylesheet">
+<link href="css/estilosAdultoLight.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="background">
 
+	<div class="sidenav">
+
+		<div _ngcontent-bgl-c186="" routerlink="/"
+			class="logoArtemisa ng-tns-c186-0" tabindex="0">
+			<img _ngcontent-bgl-c186="" src="assets/logoArtemisa.png"
+				alt="principal" width="150px" class="light-logo ng-tns-c186-0">
+		</div>
+
+		<div _ngcontent-bgl-c186="" routerlinkactive="active"
+			class="btnSidebar ng-tns-c186-0 ng-star-inserted temarioSite">
+			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="temario.html"><i
+				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-collection"></i><span
+				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Temario</span></a>
+		</div>
+
+		<div _ngcontent-bgl-c186="" routerlinkactive="active"
+			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
+			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="problemas.html"><i
+				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-balloon"></i><span
+				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Problemas</span></a>
+		</div>
+
+		<div _ngcontent-bgl-c186="" routerlinkactive="active"
+			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
+			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="libros.html"><i
+				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-book"></i><span
+				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Libros</span></a>
+		</div>
+
+		<div _ngcontent-bgl-c186="" routerlinkactive="active"
+			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
+			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="links.html"><i
+				_ngcontent-bgl-c186=""
+				class="ng-tns-c186-0 bi bi-box-arrow-up-right"></i><span
+				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Links
+					valiosos</span></a>
+		</div>
+
+		<div _ngcontent-bgl-c186="" routerlinkactive="active"
+			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
+			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="eventos.html"><i
+				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-calendar-week"></i><span
+				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Eventos</span></a>
+		</div>
+
+		<div class="btnSidebar">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button"
+					data-bs-toggle="dropdown" aria-expanded="false">...</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item"
+						href="https://domjudgeacademicueb.com/">DomJudge</a></li>
+					<li><a class="dropdown-item" href="https://www.codechef.com/">CodeChef</a></li>
+					<li><a class="dropdown-item"
+						href="https://vjudge.net/group/cuevadelprofdiego">VJudge</a></li>
+					<li><a class="dropdown-item" href="https://onlinejudge.org/">Online
+							Judge</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="main">
+
+		<br> <br>
+
+		<div class=" main card border shadow-sm mb-5 bg-body-tertiary"
+			style="border-radius: 1%">
+			<div class="card-body">
+
+				<div class="container text-left">
+					<div class="row align-items-start">
+						<div class="col"></div>
+						<h5>Temarios separados por grupos</h5>
+
+						<div
+							class=" mainCardTemario card border shadow-sm mb-5 bg-body-tertiary "
+							style="border-radius: 1%">
+							<div class="card-body">
+
+								<div class="container text-center">
+									<div class="row align-items-start">
+										<div class="col"></div>
+
+										<div class="accordion accordion-flush"
+											id="accordionFlushExample">
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseOne" aria-expanded="false"
+														aria-controls="flush-collapseOne">Todo el temario</button>
+												</h2>
+												<div id="flush-collapseOne"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseTwo" aria-expanded="false"
+														aria-controls="flush-collapseTwo">Teoría básica</button>
+												</h2>
+												<div id="flush-collapseTwo"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+											<div class="accordion-item">
+												<h2 class="accordion-header">
+													<button class="accordion-button collapsed" type="button"
+														data-bs-toggle="collapse"
+														data-bs-target="#flush-collapseThree"
+														aria-expanded="false" aria-controls="flush-collapseThree">Algoritmos
+														de busqueda</button>
+												</h2>
+												<div id="flush-collapseThree"
+													class="accordion-collapse collapse"
+													data-bs-parent="#accordionFlushExample">
+													<div class="accordion-body">TEXTO</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
 </body>
 </html>
