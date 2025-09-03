@@ -113,6 +113,11 @@
 	height: 15px;
 }
 
+.nombreColumnas th {
+	color: grey !important;
+	font-weight: normal !important;
+}
+
 .main {
 	margin-left: 150px;
 	width: 900px;
