@@ -31,423 +31,93 @@
 </head>
 <body class="background">
 
-	<div class="sidenav">
+	<nav class=" barraMenu navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
 
-		<div _ngcontent-bgl-c186="" routerlink="/"
-			class="logoArtemisa ng-tns-c186-0" tabindex="0">
-			<img _ngcontent-bgl-c186="" src="assets/logoArtemisa.png"
-				alt="principal" width="150px" class="light-logo ng-tns-c186-0">
-		</div>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted temarioSite">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="temario.html"><i
-				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-collection"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Temario</span></a>
-		</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="paginaprincipal.html"><img
+							src="assets/logoArtemisa.png"
+							class="img-fluid logoArtemisaBlanco" alt=""></a></li>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="problemas.html"><i
-				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-balloon"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Problemas</span></a>
-		</div>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="libros.html"><i
-				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-book"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Libros</span></a>
-		</div>
+					<ul class="botonesMenu">
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="temario.html">Temario</a></li>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="links.html"><i
-				_ngcontent-bgl-c186=""
-				class="ng-tns-c186-0 bi bi-box-arrow-up-right"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Links
-					valiosos</span></a>
-		</div>
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="problemas.html">Problemas</a></li>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="eventos.html"><i
-				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-calendar-week"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Eventos</span></a>
-		</div>
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="libros.html">Libros</a></li>
 
-		<div class="btnSidebar">
-			<div class="dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button"
-					data-bs-toggle="dropdown" aria-expanded="false">...</button>
-				<ul class="dropdown-menu">
-					<li><a class="dropdown-item"
-						href="https://domjudgeacademicueb.com/">DomJudge</a></li>
-					<li><a class="dropdown-item" href="https://www.codechef.com/">CodeChef</a></li>
-					<li><a class="dropdown-item"
-						href="https://vjudge.net/group/cuevadelprofdiego">VJudge</a></li>
-					<li><a class="dropdown-item" href="https://onlinejudge.org/">Online
-							Judge</a></li>
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="links.html">Links</a></li>
+
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="eventos.html">Eventos</a></li>
+
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle btnMenu" aria-expanded="false">
+								... </a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item"
+									href="https://domjudgeacademicueb.com/public">DomJudge</a></li>
+								<li><a class="dropdown-item"
+									href="https://www.codechef.com/">CodeChef</a></li>
+								<li><a class="dropdown-item"
+									href="https://vjudge.net/group/cuevadelprofdiego">VJudge</a></li>
+								<li><a class="dropdown-item"
+									href="https://onlinejudge.org/">Online Judge</a></li>
+							</ul></li>
+
+					</ul>
+
+
+					<div class="botonesDerecha">
+
+						<div class="form-check form-switch ">
+							<input class="form-check-input btnMenu " type="checkbox"
+								role="switch" id="switchCheckChecked" checked> <label
+								class="form-check-label btnMenu" for="switchCheckChecked"></label>
+						</div>
+
+						<li class="nav-item"><a class="nav-link btnMenu btnUsuario">USUARIO</a></li>
+						<li class="nav-item"><a class="nav-link btnMenu "><img
+								src="assets/logOut.jpg" class="img-fluid logOut"
+								alt="Cerrar sesión"> </a></li>
+					</div>
 				</ul>
 			</div>
 		</div>
-	</div>
+	</nav>
 
-	<div class="main">
+	<footer class="footertxt">
+		<div class="row">
+			<div class="text-center">Desarrollado por Felipe Acosta, Nataly
+				Manrique, Santiago Muñoz y Gabriela Poveda.</div>
+		</div>
+		<div class="row">
+			<div class="text-center">
+				Proyecto Artemisa 2025 <a
+					href="https://github.com/roca12/ArtemisaAngular"> <img
+					src="assets/githubIcon.png" alt="GitHub Icon" class="iconGH tam-2x"
+					width="32" height="32">
 
-		<br> <br>
-
-		<div class=" main card border shadow-sm mb-5 bg-body-tertiary"
-			style="border-radius: 1%">
-			<div class="card-body">
-
-				<div class="container text-left">
-					<div class="row align-items-start">
-						<div class="col"></div>
-						<h5>Temarios separados por grupos</h5>
-
-						<div
-							class=" mainCardTemario card border shadow-sm mb-5 bg-body-tertiary "
-							style="border-radius: 1%">
-							<div class="card-body">
-
-								<div class="container text-center">
-									<div class="row align-items-start">
-										<div class="col"></div>
-
-										<div class="accordion" id="accordionFlushExample">
-											<div class="accordion-item">
-												<h2 class="accordion-header" id="flush-headingOne">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseOne" aria-expanded="false"
-														aria-controls="flush-collapseOne">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="globe-americas"
-															class="svg-inline--fa fa-globe-americas fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"
-															style="width: 24px; height: 24px; margin-right: 8px;">
-															<path fill="currentColor"
-																d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm82.29 357.6c-3.9 3.88-7.99 7.95-11.31 11.28-2.99 3-5.1 6.7-6.17 10.71-1.51 5.66-2.73 11.38-4.77 16.87l-17.39 46.85c-13.76 3-28 4.69-42.65 4.69v-27.38c1.69-12.62-7.64-36.26-22.63-51.25-6-6-9.37-14.14-9.37-22.63v-32.01c0-11.64-6.27-22.34-16.46-27.97-14.37-7.95-34.81-19.06-48.81-26.11-11.48-5.78-22.1-13.14-31.65-21.75l-.8-.72a114.792 114.792 0 0 1-18.06-20.74c-9.38-13.77-24.66-36.42-34.59-51.14 20.47-45.5 57.36-82.04 103.2-101.89l24.01 12.01C203.48 89.74 216 82.01 216 70.11v-11.3c7.99-1.29 16.12-2.11 24.39-2.42l28.3 28.3c6.25 6.25 6.25 16.38 0 22.63L264 112l-10.34 10.34c-3.12 3.12-3.12 8.19 0 11.31l4.69 4.69c3.12 3.12 3.12 8.19 0 11.31l-8 8a8.008 8.008 0 0 1-5.66 2.34h-8.99c-2.08 0-4.08.81-5.58 2.27l-9.92 9.65a8.008 8.008 0 0 0-1.58 9.31l15.59 31.19c2.66 5.32-1.21 11.58-7.15 11.58h-5.64c-1.93 0-3.79-.7-5.24-1.96l-9.28-8.06a16.017 16.017 0 0 0-15.55-3.1l-31.17 10.39a11.95 11.95 0 0 0-8.17 11.34c0 4.53 2.56 8.66 6.61 10.69l11.08 5.54c9.41 4.71 19.79 7.16 30.31 7.16s22.59 27.29 32 32h66.75c8.49 0 16.62 3.37 22.63 9.37l13.69 13.69a30.503 30.503 0 0 1 8.93 21.57 46.536 46.536 0 0 1-13.72 32.98zM417 274.25c-5.79-1.45-10.84-5-14.15-9.97l-17.98-26.97a23.97 23.97 0 0 1 0-26.62l19.59-29.38c2.32-3.47 5.5-6.29 9.24-8.15l12.98-6.49C440.2 193.59 448 223.87 448 256c0 8.67-.74 17.16-1.82 25.54L417 274.25z"></path></svg>
-														Todo el temario
-													</button>
-												</h2>
-												<div id="flush-collapseOne"
-													class="accordion-collapse collapse"
-													aria-labelledby="flush-headingOne"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">
-														<!-- Contenido aquí -->
-
-													</div>
-												</div>
-											</div>
-
-
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseTwo" aria-expanded="false"
-														aria-controls="flush-collapseTwo">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="school"
-															class="svg-inline--fa fa-school fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M0 224v272c0 8.84 7.16 16 16 16h80V192H32c-17.67 0-32 14.33-32 32zm360-48h-24v-40c0-4.42-3.58-8-8-8h-16c-4.42 0-8 3.58-8 8v64c0 4.42 3.58 8 8 8h48c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zm137.75-63.96l-160-106.67a32.02 32.02 0 0 0-35.5 0l-160 106.67A32.002 32.002 0 0 0 128 138.66V512h128V368c0-8.84 7.16-16 16-16h96c8.84 0 16 7.16 16 16v144h128V138.67c0-10.7-5.35-20.7-14.25-26.63zM320 256c-44.18 0-80-35.82-80-80s35.82-80 80-80 80 35.82 80 80-35.82 80-80 80zm288-64h-64v320h80c8.84 0 16-7.16 16-16V224c0-17.67-14.33-32-32-32z"></path></svg>
-														Teoría básica
-													</button>
-												</h2>
-												<div id="flush-collapseTwo"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseThree"
-														aria-expanded="false" aria-controls="flush-collapseThree">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="search"
-															class="svg-inline--fa fa-search fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-															<path fill="currentColor"
-																d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
-														Algoritmos de busqueda
-													</button>
-												</h2>
-												<div id="flush-collapseThree"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">
-														<table class="table">
-															<thead class="text-muted">
-																<tr>
-																	<th class="nombreColumnas">No.</th>
-																	<th>Tema / Algoritmo</th>
-																	<th>Tipo</th>
-																	<th>Ir</th>
-																</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<th scope="row">1</th>
-																	<td>Binary Search</td>
-																	<td>Búsquedas</td>
-																	<td><a class="btn btn-primary"
-																		href="AÑADIR  CARD QUE ABRE" role="button"> <!-- Icono flecha -->
-																			<svg role="img" aria-hidden="true" focusable="false"
-																				data-prefix="far" data-icon="arrow-alt-circle-right"
-																				class="svg-inline--fa fa-arrow-alt-circle-right fa-w-16 fa-1x"
-																				xmlns="http://www.w3.org/2000/svg"
-																				viewBox="0 0 512 512"
-																				style="width: 20px; height: 20px;">
-																				<path fill="currentColor"
-																					d="M504 256C504 119 393 8 256 8S8 119 8 256s111 248 248 248 248-111 248-248zm-448 0c0-110.5 89.5-200 200-200s200 89.5 200 200-89.5 200-200 200S56 366.5 56 256zm72 20v-40c0-6.6 5.4-12 12-12h116v-67c0-10.7 12.9-16 20.5-8.5l99 99c4.7 4.7 4.7 12.3 0 17l-99 99c-7.6 7.6-20.5 2.2-20.5-8.5v-67H140c-6.6 0-12-5.4-12-12z"></path></svg>
-																	</a></td>
-																</tr>
-															</tbody>
-														</table>
-													</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseFour" aria-expanded="false"
-														aria-controls="#flush-collapseFour">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="sort-numeric-down-alt"
-															class="svg-inline--fa fa-sort-numeric-down-alt fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M176 352h-48V48a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v304H16c-14.19 0-21.36 17.24-11.29 27.31l80 96a16 16 0 0 0 22.62 0l80-96C197.35 369.26 190.22 352 176 352zm224 64h-16V304a16 16 0 0 0-16-16h-48a16 16 0 0 0-14.29 8.83l-16 32A16 16 0 0 0 304 352h16v64h-16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h96a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM330.17 34.91a79 79 0 0 0-55 54.17c-14.27 51.05 21.19 97.77 68.83 102.53a84.07 84.07 0 0 1-20.85 12.91c-7.57 3.4-10.8 12.47-8.18 20.34l9.9 20c2.87 8.63 12.53 13.49 20.9 9.91 58-24.77 86.25-61.61 86.25-132V112c-.02-51.21-48.4-91.34-101.85-77.09zM352 132a20 20 0 1 1 20-20 20 20 0 0 1-20 20z"></path></svg>
-														Algoritmos de ordenamiento
-													</button>
-												</h2>
-												<div id="flush-collapseFour"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseFive" aria-expanded="false"
-														aria-controls="#flush-collapseFive">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="text-width"
-															class="svg-inline--fa fa-text-width fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M432 32H16A16 16 0 0 0 0 48v80a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-16h120v112h-24a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-24V112h120v16a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zm-68.69 260.69C354 283.36 336 288.36 336 304v48H112v-48c0-14.31-17.31-21.32-27.31-11.31l-80 80a16 16 0 0 0 0 22.62l80 80C94 484.64 112 479.64 112 464v-48h224v48c0 14.31 17.31 21.33 27.31 11.31l80-80a16 16 0 0 0 0-22.62z"></path></svg>
-														Manipulación de cadenas de caracteres y matching
-													</button>
-												</h2>
-												<div id="flush-collapseFive"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseSix" aria-expanded="false"
-														aria-controls="#flush-collapseSix">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="dice-one"
-															class="svg-inline--fa fa-dice-one fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96c0-35.35-28.65-64-64-64zM224 288c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>
-														Manejo binario y bitwise
-													</button>
-												</h2>
-												<div id="flush-collapseSix"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseSeven"
-														aria-expanded="false" aria-controls="#flush-collapseSeven">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="table"
-															class="svg-inline--fa fa-table fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M464 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM224 416H64v-96h160v96zm0-160H64v-96h160v96zm224 160H288v-96h160v96zm0-160H288v-96h160v96z"></path></svg>
-														Estructura de datos básicas y avanzadas
-													</button>
-												</h2>
-												<div id="flush-collapseSeven"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseEight"
-														aria-expanded="false" aria-controls="#flush-collapseEight">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="plus"
-															class="svg-inline--fa fa-plus fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
-														Matemáticas
-													</button>
-												</h2>
-												<div id="flush-collapseEight"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseNine" aria-expanded="false"
-														aria-controls="#flush-collapseNine">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="pencil-ruler"
-															class="svg-inline--fa fa-pencil-ruler fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M109.46 244.04l134.58-134.56-44.12-44.12-61.68 61.68a7.919 7.919 0 0 1-11.21 0l-11.21-11.21c-3.1-3.1-3.1-8.12 0-11.21l61.68-61.68-33.64-33.65C131.47-3.1 111.39-3.1 99 9.29L9.29 99c-12.38 12.39-12.39 32.47 0 44.86l100.17 100.18zm388.47-116.8c18.76-18.76 18.75-49.17 0-67.93l-45.25-45.25c-18.76-18.76-49.18-18.76-67.95 0l-46.02 46.01 113.2 113.2 46.02-46.03zM316.08 82.71l-297 296.96L.32 487.11c-2.53 14.49 10.09 27.11 24.59 24.56l107.45-18.84L429.28 195.9 316.08 82.71zm186.63 285.43l-33.64-33.64-61.68 61.68c-3.1 3.1-8.12 3.1-11.21 0l-11.21-11.21c-3.09-3.1-3.09-8.12 0-11.21l61.68-61.68-44.14-44.14L267.93 402.5l100.21 100.2c12.39 12.39 32.47 12.39 44.86 0l89.71-89.7c12.39-12.39 12.39-32.47 0-44.86z"></path></svg>
-														Geometría
-													</button>
-												</h2>
-												<div id="flush-collapseNine"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseTen" aria-expanded="false"
-														aria-controls="#flush-collapseTen">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="project-diagram"
-															class="svg-inline--fa fa-project-diagram fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M384 320H256c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32zM192 32c0-17.67-14.33-32-32-32H32C14.33 0 0 14.33 0 32v128c0 17.67 14.33 32 32 32h95.72l73.16 128.04C211.98 300.98 232.4 288 256 288h.28L192 175.51V128h224V64H192V32zM608 0H480c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h128c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32z"></path></svg>
-														Teoría de grafos, arboles y redes
-													</button>
-												</h2>
-												<div id="flush-collapseTen"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseEleven"
-														aria-expanded="false"
-														aria-controls="#flush-collapseEleven">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="lightbulb"
-															class="svg-inline--fa fa-lightbulb fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M96.06 454.35c.01 6.29 1.87 12.45 5.36 17.69l17.09 25.69a31.99 31.99 0 0 0 26.64 14.28h61.71a31.99 31.99 0 0 0 26.64-14.28l17.09-25.69a31.989 31.989 0 0 0 5.36-17.69l.04-38.35H96.01l.05 38.35zM0 176c0 44.37 16.45 84.85 43.56 115.78 16.52 18.85 42.36 58.23 52.21 91.45.04.26.07.52.11.78h160.24c.04-.26.07-.51.11-.78 9.85-33.22 35.69-72.6 52.21-91.45C335.55 260.85 352 220.37 352 176 352 78.61 272.91-.3 175.45 0 73.44.31 0 82.97 0 176zm176-80c-44.11 0-80 35.89-80 80 0 8.84-7.16 16-16 16s-16-7.16-16-16c0-61.76 50.24-112 112-112 8.84 0 16 7.16 16 16s-7.16 16-16 16z"></path></svg>
-														Programación dinámica
-													</button>
-												</h2>
-												<div id="flush-collapseEleven"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-											<div class="accordion-item">
-												<h2 class="accordion-header">
-													<button class="accordion-button collapsed" type="button"
-														data-bs-toggle="collapse"
-														data-bs-target="#flush-collapseTwelve"
-														aria-expanded="false"
-														aria-controls="#flush-collapseTwelve">
-														<svg role="img" aria-hidden="true" focusable="false"
-															data-prefix="fas" data-icon="terminal"
-															class="svg-inline--fa fa-terminal fa-w-16 fa-1x"
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-															<path fill="currentColor"
-																d="M257.981 272.971L63.638 467.314c-9.373 9.373-24.569 9.373-33.941 0L7.029 444.647c-9.357-9.357-9.375-24.522-.04-33.901L161.011 256 6.99 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L257.981 239.03c9.373 9.372 9.373 24.568 0 33.941zM640 456v-32c0-13.255-10.745-24-24-24H312c-13.255 0-24 10.745-24 24v32c0 13.255 10.745 24 24 24h304c13.255 0 24-10.745 24-24z"></path></svg>
-														Generadores de casos de prueba y otrosF
-													</button>
-												</h2>
-												<div id="flush-collapseTwelve"
-													class="accordion-collapse collapse"
-													data-bs-parent="#accordionFlushExample">
-													<div class="accordion-body">TEXTO</div>
-												</div>
-											</div>
-
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				</a>
 			</div>
 		</div>
+	</footer>
 
-		<footer class="footertxt main">
-			<div class="row">
-				<div class="text-center">Desarrollado por Felipe Acosta,
-					Nataly Manrique, Santiago Muñoz y Gabriela Poveda.</div>
-			</div>
-			<div class="row">
-				<div class="text-center">
-					Proyecto Artemisa 2025 <a
-						href="https://github.com/roca12/ArtemisaAngular"> <img
-						src="assets/githubIcon.png" alt="GitHub Icon"
-						class="iconGH tam-2x" width="32" height="32">
-
-					</a>
-				</div>
-			</div>
-		</footer>
-		<br> <br>
-
-
-	</div>
+	<br>
+	<br>
 </body>
 </html>

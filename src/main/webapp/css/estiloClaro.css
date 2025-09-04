@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+.background {
+	background-color: #ffffff;
+}
+
+.barraMenu {
+	background-color: #d73800 !important;
+}
+
+.btnMenu {
+	color: white;
+	height: 20px;
+	width: fit-content;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	font-weight: bold;
+}
+
+.btnUsuario{
+	color: #d73800;
+	background-color: #ffdddd; 
+}
+
+.btnMenu:hover {
+    background-color: #ffdddd; 
+    color: #bf2e25; 
+}
+
+
+.botonesMenu {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	padding: 0;
+	margin: 0;
+	width: 900px;
+	justify-content: center;
+	align-items: center;
+	height: 70px;
+	font-size: 17px;
+}
+
+.botonesDerecha {
+    list-style: none; 
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70px;
+}
+
+
+.logoArtemisaBlanco {
+	height: 50px;
+	width: 150px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.logOut {
+	height: 20px;
+	width: 27px;
+}
+
+.form-check-input {
+    background-color: #fff;
+    border-color: #000;
+}
+
+.form-check-input:checked {
+    background-color: #000;
+    border-color: #fff;
+}
+
+.form-check-input:checked::before {
+    background-color: #fff;
+}
+
+.form-check-input::before {
+    background-color: #000;
+}
+
+.footertxt {
+	font-size: 14px;
+}
+
+.tituloCard{
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+
+.txtCard{
+	font-size: 16px;
+	color: gray;
+}
+
+.cardBackground{
+	color: #f7f7f7;
+	border-color: #e9be8b;
+}
+

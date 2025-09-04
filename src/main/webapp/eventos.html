@@ -32,72 +32,92 @@
 </head>
 <body class="background">
 
-	<div class="sidenav">
+		<nav class=" barraMenu navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+		
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="paginaprincipal.html"><img
+							src="assets/logoArtemisa.png"
+							class="img-fluid logoArtemisaBlanco" alt=""></a></li>
 
-		<div _ngcontent-bgl-c186="" routerlink="/"
-			class="logoArtemisa ng-tns-c186-0" tabindex="0">
-			<img _ngcontent-bgl-c186="" src="assets/logoArtemisa.png"
-				alt="principal" width="150px" class="light-logo ng-tns-c186-0">
-		</div>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted ">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="temario.html"><i
-				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-collection"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Temario</span></a>
-		</div>
+					<ul class="botonesMenu">
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="temario.html">Temario</a></li>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="problemas.html"><i
-				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-balloon"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Problemas</span></a>
-		</div>
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="problemas.html">Problemas</a></li>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="libros.html"><i
-				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-book"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Libros</span></a>
-		</div>
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="libros.html">Libros</a></li>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="links.html"><i
-				_ngcontent-bgl-c186=""
-				class="ng-tns-c186-0 bi bi-box-arrow-up-right"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Links
-					valiosos</span></a>
-		</div>
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="links.html">Links</a></li>
 
-		<div _ngcontent-bgl-c186="" routerlinkactive="active"
-			class="btnSidebar ng-tns-c186-0 ng-star-inserted temarioSite">
-			<a _ngcontent-bgl-c186="" class="ng-tns-c186-0" href="eventos.html"><i
-				_ngcontent-bgl-c186="" class="ng-tns-c186-0 bi bi-calendar-week"></i><span
-				_ngcontent-bgl-c186="" id="title" class="ng-tns-c186-0">Eventos</span></a>
-		</div>
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="eventos.html">Eventos</a></li>
 
-		<div class="btnSidebar">
-			<div class="dropdown">
-				<button class="btn btn-secondary dropdown-toggle" type="button"
-					data-bs-toggle="dropdown" aria-expanded="false">...</button>
-				<ul class="dropdown-menu">
-					<li><a class="dropdown-item"
-						href="https://domjudgeacademicueb.com/">DomJudge</a></li>
-					<li><a class="dropdown-item" href="https://www.codechef.com/">CodeChef</a></li>
-					<li><a class="dropdown-item"
-						href="https://vjudge.net/group/cuevadelprofdiego">VJudge</a></li>
-					<li><a class="dropdown-item" href="https://onlinejudge.org/">Online
-							Judge</a></li>
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle btnMenu" aria-expanded="false"> ... </a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item"
+									href="https://domjudgeacademicueb.com/public">DomJudge</a></li>
+								<li><a class="dropdown-item"
+									href="https://www.codechef.com/">CodeChef</a></li>
+								<li><a class="dropdown-item"
+									href="https://vjudge.net/group/cuevadelprofdiego">VJudge</a></li>
+								<li><a class="dropdown-item"
+									href="https://onlinejudge.org/">Online Judge</a></li>
+							</ul></li>
+
+					</ul>
+
+
+					<div class="botonesDerecha">
+
+						<div class="form-check form-switch ">
+							<input class="form-check-input btnMenu " type="checkbox"
+								role="switch" id="switchCheckChecked" checked> <label
+								class="form-check-label btnMenu" for="switchCheckChecked"></label>
+						</div>
+
+						<li class="nav-item"><a class="nav-link btnMenu btnUsuario">USUARIO</a></li>
+						<li class="nav-item"><a class="nav-link btnMenu "><img
+								src="assets/logOut.jpg" class="img-fluid logOut"
+								alt="Cerrar sesión"> </a></li>
+					</div>
 				</ul>
 			</div>
 		</div>
-	</div>
+	</nav>
+	
+		<footer class="footertxt">
+			<div class="row">
+				<div class="text-center">Desarrollado por Felipe Acosta,
+					Nataly Manrique, Santiago Muñoz y Gabriela Poveda.</div>
+			</div>
+			<div class="row">
+				<div class="text-center">
+					Proyecto Artemisa 2025 <a
+						href="https://github.com/roca12/ArtemisaAngular"> <img
+						src="assets/githubIcon.png" alt="GitHub Icon"
+						class="iconGH tam-2x" width="32" height="32">
 
-	<div class="main">
+					</a>
+				</div>
+			</div>
+		</footer>
 
 		<br> <br>
-	</div>
 
 </body>
 </html>
