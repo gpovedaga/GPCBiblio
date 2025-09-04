@@ -26,7 +26,7 @@
 	integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
 	crossorigin="anonymous"></script>
 
-<link href="css/estilosAdultoLight.css" rel="stylesheet">
+<link href="css/estiloClaro.css" rel="stylesheet">
 
 </head>
 <body class="background">
@@ -50,7 +50,7 @@
 
 
 					<ul class="botonesMenu">
-						<li class="nav-item"><a class="nav-link btnMenu"
+						<li class="nav-item"><a class="nav-link btnMenu btnSelected"
 							href="temario.html">Temario</a></li>
 
 						<li class="nav-item"><a class="nav-link btnMenu"
@@ -100,6 +100,50 @@
 		</div>
 	</nav>
 
+	<!-- ACABA MENU -->
+
+	<div class="container">
+		<div class="tabs">
+			<h3 class="active">Todo el temario</h3>
+			<h3>Beans.var</h3>
+		</div>
+		<div class="tab-content">
+			<div class="active">
+				<p>
+				<table id="tablaTemario">
+					<thead>
+						<tr>
+							<th>No.</th>
+							<th>Tema / Algoritmo</th>
+							<th>Tipo</th>
+							<th>Ir</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>${bean.dato.numero}</td>
+							<td>${bean.dato.algoritmo}</td>
+							<td>${bean.dato.tipo}</td>
+							<td><button class="btnEditar" onclick="irA(${bean.link})">Ir</button></td>
+						</tr>
+					</tbody>
+
+				</table>
+
+				<div class="pagination" id="paginacion"></div>
+
+				</p>
+
+			</div>
+			<div>
+				<p>TABLA 2</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- INICIA FOOTER -->
+
 	<footer class="footertxt">
 		<div class="row">
 			<div class="text-center">Desarrollado por Felipe Acosta, Nataly
@@ -119,5 +163,26 @@
 
 	<br>
 	<br>
+
+	<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.querySelectorAll(".tabs h3");
+  const contents = document.querySelectorAll(".tab-content > div");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      contents.forEach((content, i) => {
+        content.classList.toggle("active", i === index);
+      });
+    });
+  });
+});
+</script>
+
+
+
 </body>
 </html>

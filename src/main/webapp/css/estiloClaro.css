@@ -22,16 +22,15 @@
 	font-weight: bold;
 }
 
-.btnUsuario{
+.btnUsuario {
 	color: #d73800;
-	background-color: #ffdddd; 
+	background-color: #ffdddd;
 }
 
 .btnMenu:hover {
-    background-color: #ffdddd; 
-    color: #bf2e25; 
+	background-color: #ffdddd;
+	color: #bf2e25;
 }
-
 
 .botonesMenu {
 	list-style: none;
@@ -48,18 +47,17 @@
 }
 
 .botonesDerecha {
-    list-style: none; 
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-    width: 300px;
-    justify-content: flex-end;
-    align-items: center;
-    height: 70px;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	padding: 0;
+	margin: 0;
+	width: 300px;
+	justify-content: flex-end;
+	align-items: center;
+	height: 70px;
 }
-
 
 .logoArtemisaBlanco {
 	height: 50px;
@@ -79,40 +77,142 @@
 }
 
 .form-check-input {
-    background-color: #fff;
-    border-color: #000;
+	background-color: #fff;
+	border-color: #000;
 }
 
 .form-check-input:checked {
-    background-color: #000;
-    border-color: #fff;
+	background-color: #000;
+	border-color: #fff;
 }
 
 .form-check-input:checked::before {
-    background-color: #fff;
+	background-color: #fff;
 }
 
 .form-check-input::before {
-    background-color: #000;
+	background-color: #000;
 }
 
 .footertxt {
 	font-size: 14px;
 }
 
-.tituloCard{
+.tituloCard {
 	font-size: 20px;
 	font-weight: bold;
 	color: black;
 }
 
-.txtCard{
-	font-size: 16px;
+.txtCard {
+	font-size: 14px;
 	color: gray;
 }
 
-.cardBackground{
-	color: #f7f7f7;
+.descripCard {
+	color: black;
+	font-size: 14px;
+}
+
+.autoWidth {
+	width: auto;
+	height: 100px;
+	object-fit: contain;
+}
+
+.cardBackground {
+	background-color: #f7f7f7;
 	border-color: #e9be8b;
 }
 
+.btnSelected {
+	background-color: #ffdddd;
+	color: #bf2e25;
+}
+
+.btnEditar {
+	color: #d73800;
+	border: none;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.tabs, .tab-content {
+	width: 100%;
+	max-width: 800px;
+}
+
+.tabs {
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+	margin-bottom: 0;
+	flex-wrap: wrap;
+}
+
+.tabs h3 {
+	padding: 10px 20px;
+	background-color: #ffffff;
+	color: #0a4159;
+	border-radius: 5px 5px 0 0;
+	cursor: pointer;
+	margin: 0;
+	transition: background-color 0.3s ease;
+}
+
+.tabs h3.active {
+	background-color: #0a4159;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.tab-content {
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 0 0 5px 5px;
+}
+
+.tab-content>div {
+	display: none;
+}
+
+.tab-content>div.active {
+	display: block;
+}
+
+#tablaTemario {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#tablaTemario th, #tablaTemario td {
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+	text-align: left;
+}
+
+#tablaTemario th {
+	background-color: #f5f5f5;
+}
+
+.btnEditar {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 6px 12px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btnEditar:hover {
+	background-color: #0056b3;
+}
