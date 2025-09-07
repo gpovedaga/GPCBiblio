@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 .background {
-	background-color: #ffffff;
+	background-color: #121212;
+	color: #ffffff;
 }
 
 .btnMenu {
-	color: white;
+	color: #ffffff;
 	padding: 0.625rem 0.9375rem;
 	cursor: pointer;
 	text-align: center;
@@ -21,18 +22,18 @@
 }
 
 .btnUsuario {
-	color: #d73800;
-	background-color: #ffdddd;
+	color: #ffdddd;
+	background-color: #5a1a00;
 	border-radius: 0.3125rem;
 }
 
 .btnMenu:hover {
-	background-color: #ffdddd;
-	color: #bf2e25;
+	background-color: #333333;
+	color: #ffdddd;
 }
 
 .barraMenu {
-	background-color: #d73800;
+	background-color: #333333;
 	width: 100%;
 	padding: 0.625rem 0.9375rem;
 	display: flex;
@@ -105,38 +106,39 @@
 
 .form-check-input {
 	background-color: #ffffff;
-	border-color: #d73800;
+	border-color: #000000;
 }
 
 .form-check-input:checked {
 	background-color: #ffffff;
-	border-color: #d73800;
+	border-color: #000000;
 }
 
 .form-check-input:checked {
 	background-image:
-		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%23d73800' /%3E%3C/svg%3E");
+		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='8' cy='8' r='4' fill='black' /%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .footertxt {
 	font-size: 0.875rem;
+	color: #cccccc;
 }
 
 .tituloCard {
 	font-size: 1.25rem;
 	font-weight: bold;
-	color: black;
+	color: #ffffff;
 }
 
 .txtCard {
 	font-size: 0.875rem;
-	color: gray;
+	color: #aaaaaa;
 }
 
 .descripCard {
-	color: black;
+	color: #ffffff;
 	font-size: 0.875rem;
 }
 
@@ -147,13 +149,13 @@
 }
 
 .cardBackground {
-	background-color: #f7f7f7;
-	border-color: #e9be8b;
+	background-color: #1e1e1e;
+	border-color: #444444;
 }
 
 .btnSelected {
-	background-color: #ffdddd;
-	color: #bf2e25;
+	background-color: #444444;
+	color: #ffdddd;
 }
 
 @media ( max-width : 768px) {
@@ -191,7 +193,7 @@
 	}
 }
 
-/*TEMARIO*/
+/* TEMARIO */
 .tabs {
 	width: 100%;
 	display: flex;
@@ -204,8 +206,8 @@
 
 .tabs h3 {
 	padding: 0.375rem 0.75rem;
-	background-color: #ffffff;
-	color: #0a4159;
+	background-color: #333333;
+	color: #ffffff;
 	border-radius: 0.3125rem 0.3125rem 0 0;
 	cursor: pointer;
 	margin: 0;
@@ -222,13 +224,14 @@
 .tab-content {
 	width: 100%;
 	max-width: 40rem;
-	border: 1px solid #ccc;
+	border: 1px solid #444;
 	border-top: none;
 	padding: 1rem;
-	background-color: #fff;
+	background-color: #1e1e1e;
 	border-radius: 0 0 0.3125rem 0.3125rem;
 	font-size: 0.875rem;
 	overflow-x: auto;
+	color: #ffffff;
 }
 
 .tab-content>div {
@@ -244,17 +247,18 @@
 	width: 100%;
 	min-width: 30rem;
 	font-size: 0.75rem;
+	color: #ffffff;
 }
 
 #tablaTemario th, #tablaTemario td {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #444;
 	padding: 0.5rem;
 	text-align: left;
 	white-space: nowrap;
 }
 
 #tablaTemario th {
-	background-color: #f5f5f5;
+	background-color: #333333;
 	font-weight: bold;
 }
 
@@ -304,19 +308,15 @@
 	}
 }
 
-/*INICIAR SESION*/
-.txtNoTieneCuenta {
-	color: gray;
-}
-
+/* INICIAR SESION */
 .cardInicioSesion {
 	max-width: 800px;
 	margin: 2rem auto;
 	padding: 0;
-	background-color: #ffffff;
+	background-color: #1e1e1e;
 	border-radius: 0.75rem;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.1);
 	overflow: hidden;
 }
 
@@ -357,27 +357,6 @@
 	color: #000000;
 }
 
-.rowInicioSesion>.col-md-5, .rowInicioSesion>.col-md-7 {
-	padding: 0.25rem;
-}
-
-.imgInicioSesion {
-	width: 100%;
-	max-height: 300px;
-	border-radius: 0.75rem;
-	object-fit: cover;
-}
-
-.btnNoTieneCuenta {
-	color: gray;
-	background: none;
-	border: none;
-	padding: 0;
-	font-size: 0.75rem;
-	text-decoration: underline;
-	cursor: pointer;
-}
-
 .btnIniciarSesion {
 	background-color: #0a4159;
 	color: white;
@@ -393,6 +372,16 @@
 	background-color: #083648;
 }
 
+.btnNoTieneCuenta {
+	color: gray;
+	background: none;
+	border: none;
+	padding: 0;
+	font-size: 0.75rem;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 @media ( max-width : 768px) {
 	.rowInicioSesion {
 		flex-direction: column;
@@ -406,19 +395,20 @@
 	}
 }
 
-/*LIBROS*/
+/* LIBROS */
 .card-libro {
 	width: 100%;
 	max-width: 700px;
 	height: 250px;
-	background-color: #ffffff;
+	background-color: #1e1e1e;
 	border-radius: 0.75rem;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 	overflow: hidden;
 	transition: transform 0.3s ease;
 	display: flex;
 	flex-direction: row;
 	margin: auto;
+	color: #ffffff;
 }
 
 .card-libro:hover {
@@ -443,13 +433,13 @@
 .card-libro .card-title {
 	font-size: 1rem;
 	font-weight: bold;
-	color: #0a4159;
+	color: #ffffff;
 	margin-bottom: 0.5rem;
 }
 
 .card-libro .card-text {
 	font-size: 0.85rem;
-	color: #555;
+	color: #cccccc;
 	text-align: justify;
 	flex-grow: 1;
 	overflow: hidden;
@@ -492,23 +482,7 @@
 	background-color: #1e7e34;
 }
 
-@media ( max-width : 768px) {
-	.card-libro {
-		flex-direction: column;
-		height: auto;
-		max-width: 100%;
-	}
-	.card-libro img {
-		width: 100%;
-		height: 180px;
-		border-radius: 0.75rem 0.75rem 0 0;
-	}
-	.card-libro .card-body {
-		width: 100%;
-	}
-}
-
-/*LINKS*/
+/* LINKS */
 .img-libro-mini {
 	height: 80px;
 	width: auto;
@@ -516,7 +490,12 @@
 	border-radius: 0.5rem;
 }
 
-/*EVENTOS*/
+/* PROBLEMAS */
+.txtProblemas {
+	color: white;
+}
+
+/* EVENTOS */
 .calendario-container {
 	display: flex;
 	justify-content: center;
@@ -563,13 +542,13 @@ ul {
 .weekdays {
 	display: flex;
 	justify-content: space-between;
-	background-color: #ddd;
+	background-color: #333;
 	padding: 10px 0;
 }
 
 .weekdays li {
 	width: 14.6%;
-	color: #666;
+	color: #cccccc;
 	text-align: center;
 	font-weight: bold;
 }
@@ -577,7 +556,7 @@ ul {
 .days {
 	display: flex;
 	flex-wrap: wrap;
-	background: #eee;
+	background: #222;
 	padding: 10px 0;
 	border-radius: 0 0 0.75rem 0.75rem;
 }
@@ -587,7 +566,7 @@ ul {
 	text-align: center;
 	margin-bottom: 5px;
 	font-size: 12px;
-	color: #777;
+	color: #aaaaaa;
 }
 
 .day-container {
@@ -600,7 +579,7 @@ ul {
 
 .day-number {
 	font-weight: bold;
-	color: #333;
+	color: #ffffff;
 }
 
 .day-event {

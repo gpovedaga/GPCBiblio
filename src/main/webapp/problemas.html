@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8" />
 <title>Problemas</title>
-
-<link rel="icon" href="assets/iconoArtemisa.png" type="image/png">
-
+<link href="assets/iconoArtemisa.png" rel="icon" type="image/png" />
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-	rel="stylesheet">
-
-
-<link
+	rel="stylesheet" />
+<link crossorigin="anonymous"
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-	rel="stylesheet"
 	integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-	crossorigin="anonymous">
-
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+	rel="stylesheet" />
+<script crossorigin="anonymous"
 	integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-	crossorigin="anonymous"></script>
-
-<link href="css/estiloClaro.css" rel="stylesheet">
-
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js">
+  </script>
+<link href="css/estiloClaro.css" id="tema-css" rel="stylesheet" />
 </head>
 <body class="background">
-
-	<nav class=" barraMenu navbar navbar-expand-lg bg-body-tertiary">
-		<div class="container-fluid">
-
-			<button class="navbar-toggler" type="button"
-				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" href="paginaprincipal.html"><img
-							src="assets/logoArtemisa.png"
-							class="img-fluid logoArtemisaBlanco" alt=""></a></li>
-
-
-					<ul class="botonesMenu">
+	<header>
+		<nav class="barraMenu navbar navbar-expand-lg">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="paginaprincipal.html"> <img
+					alt="Logo" class="img-fluid logoArtemisaBlanco"
+					src="assets/logoArtemisa.png" />
+				</a>
+				<button aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation" class="navbar-toggler"
+					data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
+					type="button">
+					<span class="navbar-toggler-icon"> </span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 botonesMenu">
 						<li class="nav-item"><a class="nav-link btnMenu"
-							href="temario.html">Temario</a></li>
-
-						<li class="nav-item"><a class="nav-link btnMenu btnSelected"
-							href="problemas.html">Problemas</a></li>
-
+							href="temario.html"> Temario </a></li>
 						<li class="nav-item"><a class="nav-link btnMenu"
-							href="libros.html">Libros</a></li>
-
+							href="problemas.html"> Problemas </a></li>
 						<li class="nav-item"><a class="nav-link btnMenu"
-							href="links.html">Links</a></li>
-
+							href="libros.html"> Libros </a></li>
 						<li class="nav-item"><a class="nav-link btnMenu"
-							href="eventos.html">Eventos</a></li>
-
-						<li class="nav-item dropdown"><a
-							class="nav-link dropdown-toggle btnMenu" aria-expanded="false">
-								... </a>
+							href="links.html"> Links </a></li>
+						<li class="nav-item"><a class="nav-link btnMenu"
+							href="eventos.html"> Eventos </a></li>
+						<li class="nav-item dropdown"><a aria-expanded="false"
+							class="nav-link dropdown-toggle btnMenu"
+							data-bs-toggle="dropdown" href="#" role="button"> Más </a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item"
-									href="https://domjudgeacademicueb.com/public">DomJudge</a></li>
+									href="https://domjudgeacademicueb.com/public"> DomJudge </a></li>
 								<li><a class="dropdown-item"
-									href="https://www.codechef.com/">CodeChef</a></li>
+									href="https://www.codechef.com/"> CodeChef </a></li>
 								<li><a class="dropdown-item"
-									href="https://vjudge.net/group/cuevadelprofdiego">VJudge</a></li>
+									href="https://vjudge.net/group/cuevadelprofdiego"> VJudge </a>
+								</li>
 								<li><a class="dropdown-item"
-									href="https://onlinejudge.org/">Online Judge</a></li>
+									href="https://onlinejudge.org/"> Online Judge </a></li>
 							</ul></li>
-
 					</ul>
-
-
 					<div class="botonesDerecha">
-
-						<div class="form-check form-switch ">
-							<input class="form-check-input btnMenu " type="checkbox"
-								role="switch" id="switchCheckChecked" checked> <label
-								class="form-check-label btnMenu" for="switchCheckChecked"></label>
+						<div class="form-check form-switch">
+							<input checked="" class="form-check-input btnMenu"
+								id="switchCheckChecked" role="switch" type="checkbox" /> <label
+								class="form-check-label btnMenu" for="switchCheckChecked">
+							</label>
 						</div>
-
-						<li class="nav-item"><a class="nav-link btnMenu btnUsuario">USUARIO</a></li>
-						<li class="nav-item"><a class="nav-link btnMenu "><img
-								src="assets/logOut.jpg" class="img-fluid logOut"
-								alt="Cerrar sesión"> </a></li>
+						<a class="nav-link btnMenu btnUsuario"> ADMIN </a> <a
+							class="nav-link btnMenu"> <img alt="Cerrar sesión"
+							class="img-fluid logOut" id="iconoLogout"
+							src="assets/logOutClaro.jpg" />
+						</a>
 					</div>
-				</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="card cardInicioSesion">
+		<div class="card-body">
+			<h5 class="card-title text-start txtProblemas">Selector de
+				problemas por dificultad, juez y tema</h5>
+			<div class="table-responsive">
+				<table id="tablaTemario">
+					<thead>
+						<tr>
+							<th>No.</th>
+							<th>Tema / Algoritmo</th>
+							<th>Tipo</th>
+							<th>Ir</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>${bean.dato.numero}</td>
+							<td>${bean.dato.algoritmo}</td>
+							<td>${bean.dato.tipo}</td>
+							<td>
+								<button class="btnEditar" onclick="irA(${bean.link})">
+									Ir</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
-	</nav>
-
-	<footer class="footertxt">
+	</div>
+	<br />
+	<br />
+	<footer class="footertxt border-top">
 		<div class="row">
 			<div class="text-center">Desarrollado por Felipe Acosta, Nataly
 				Manrique, Santiago Muñoz y Gabriela Poveda.</div>
@@ -109,16 +115,47 @@
 			<div class="text-center">
 				Proyecto Artemisa 2025 <a
 					href="https://github.com/roca12/ArtemisaAngular"> <img
-					src="assets/githubIcon.png" alt="GitHub Icon" class="iconGH tam-2x"
-					width="32" height="32">
-
+					alt="GitHub Icon" class="iconGH tam-2x" height="32"
+					id="iconoGithub" src="assets/githubIconClaro.png" width="32" />
 				</a>
 			</div>
 		</div>
 	</footer>
+	<script>
+   document.addEventListener("DOMContentLoaded", function () {
+  const switchTema = document.getElementById('switchCheckChecked');
+  const linkTema = document.getElementById('tema-css');
+  const iconoGithub = document.getElementById('iconoGithub');
+  const iconoLogout = document.getElementById('iconoLogout');
 
-	<br>
-	<br>
+  const temaGuardado = localStorage.getItem('tema');
 
+  if (temaGuardado === 'oscuro') {
+    linkTema.href = 'css/estiloOscuro.css';
+    iconoGithub.src = 'assets/githubIconOscuro.png';
+    iconoLogout.src = 'assets/logOutOscuro.png';
+    switchTema.checked = false;
+  } else {
+    linkTema.href = 'css/estiloClaro.css';
+    iconoGithub.src = 'assets/githubIconClaro.png';
+    iconoLogout.src = 'assets/logOutClaro.jpg';
+    switchTema.checked = true;
+  }
+
+  switchTema.addEventListener('change', () => {
+    if (switchTema.checked) {
+      linkTema.href = 'css/estiloClaro.css';
+      iconoGithub.src = 'assets/githubIconClaro.png';
+      iconoLogout.src = 'assets/logOutClaro.jpg';
+      localStorage.setItem('tema', 'claro');
+    } else {
+      linkTema.href = 'css/estiloOscuro.css';
+      iconoGithub.src = 'assets/githubIconOscuro.png';
+      iconoLogout.src = 'assets/logOutOscuro.png';
+      localStorage.setItem('tema', 'oscuro');
+    }
+  });
+});
+  </script>
 </body>
 </html>

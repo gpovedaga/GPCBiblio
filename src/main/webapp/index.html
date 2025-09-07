@@ -3,21 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Biblioteca Artemisa</title>
-
 <link rel="icon" href="assets/iconoArtemisa.png" type="image/png">
 
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
 	rel="stylesheet">
+
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
 	crossorigin="anonymous">
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-	crossorigin="anonymous"></script>
 
 <link id="tema-css" href="css/estiloClaro.css" rel="stylesheet">
 </head>
@@ -50,6 +46,7 @@
 							href="links.html">Links</a></li>
 						<li class="nav-item"><a class="nav-link btnMenu"
 							href="eventos.html">Eventos</a></li>
+
 						<li class="nav-item dropdown"><a
 							class="nav-link dropdown-toggle btnMenu" href="#" role="button"
 							data-bs-toggle="dropdown" aria-expanded="false"> Más </a>
@@ -63,6 +60,7 @@
 								<li><a class="dropdown-item"
 									href="https://onlinejudge.org/">Online Judge</a></li>
 							</ul></li>
+
 					</ul>
 
 					<div class="botonesDerecha">
@@ -72,51 +70,31 @@
 								class="form-check-label btnMenu" for="switchCheckChecked"></label>
 						</div>
 						<a class="nav-link btnMenu btnUsuario">ADMIN</a> <a
-							class="nav-link btnMenu"><img id="iconoLogout"
-							src="assets/logOutClaro.jpg" class="img-fluid logOut"
-							alt="Cerrar sesión"></a>
+							class="nav-link btnMenu"><img src="assets/logOut.jpg"
+							class="img-fluid logOut" alt="Cerrar sesión"></a>
 					</div>
 				</div>
 			</div>
 		</nav>
 	</header>
 
-	<div class="container containerTemario">
-		<div class="tabs">
-			<h3 class="active">Todo el temario</h3>
-			<h3>Beans.var</h3>
-		</div>
-		<div class="tab-content">
-			<div class="active">
-				<p>
-				<table id="tablaTemario">
-					<thead>
-						<tr>
-							<th>No.</th>
-							<th>Tema / Algoritmo</th>
-							<th>Tipo</th>
-							<th>Ir</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>${bean.dato.numero}</td>
-							<td>${bean.dato.algoritmo}</td>
-							<td>${bean.dato.tipo}</td>
-							<td><button class="btnEditar" onclick="irA(${bean.link})">Ir</button></td>
-						</tr>
-					</tbody>
-				</table>
-				<div class="pagination" id="paginacion"></div>
-				</p>
-			</div>
-			<div>
-				<p>TABLA 2</p>
+	<section
+		class="hero-section d-flex align-items-center justify-content-center text-center text-white"
+		style="background-image: url('assets/index.png'); background-size: cover; background-position: center; height: 80vh;">
+		<div class="container">
+			<h1 class="display-4 fw-bold">¡Bienvenido a la biblioteca
+				Artemisa!</h1>
+			<p class="lead">Explora recursos, aprende y participa en nuestra
+				comunidad de programación competitiva.</p>
+			<div class="mt-4">
+				<a href="iniciarSesion.html" class="btn btn-primary btn-lg me-3">Iniciar
+					sesión</a> <a href="crearCuenta.html"
+					class="btn btn-outline-light btn-lg">Crear cuenta</a>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<footer class="footertxt">
+	<footer class="footertxt border-top mt-5">
 		<div class="row">
 			<div class="text-center">Desarrollado por Felipe Acosta, Nataly
 				Manrique, Santiago Muñoz y Gabriela Poveda.</div>
@@ -125,36 +103,19 @@
 			<div class="text-center">
 				Proyecto Artemisa 2025 <a
 					href="https://github.com/roca12/ArtemisaAngular"> <img
-					id="iconoGithub" src="assets/githubIconClaro.png" alt="GitHub Icon"
+					id="iconoGithub" src="assets/githubIcon.png" alt="GitHub Icon"
 					class="iconGH tam-2x" width="32" height="32">
 				</a>
 			</div>
 		</div>
 	</footer>
 
-	<br>
-	<br>
-
 	<script>
 document.addEventListener("DOMContentLoaded", function () {
-  const tabs = document.querySelectorAll(".tabs h3");
-  const contents = document.querySelectorAll(".tab-content > div");
-
-  tabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => {
-      tabs.forEach(t => t.classList.remove("active"));
-      tab.classList.add("active");
-
-      contents.forEach((content, i) => {
-        content.classList.toggle("active", i === index);
-      });
-    });
-  });
-
   const switchTema = document.getElementById('switchCheckChecked');
   const linkTema = document.getElementById('tema-css');
   const iconoGithub = document.getElementById('iconoGithub');
-  const iconoLogout = document.getElementById('iconoLogout');
+  const iconoLogout = document.querySelector('.logOut');
 
   const temaGuardado = localStorage.getItem('tema');
 
