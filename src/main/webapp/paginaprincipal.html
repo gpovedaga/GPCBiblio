@@ -84,7 +84,7 @@
 							</label>
 						</div>
 						<a class="nav-link btnMenu btnUsuario"> ADMIN </a> <a
-							class="nav-link btnMenu"> <img alt="Cerrar sesión"
+							href="index.html" class="nav-link btnMenu"> <img alt="Cerrar sesión"
 							class="img-fluid logOut" id="iconoLogout" src="" />
 
 						</a>
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     linkTema.href = 'css/estiloClaro.css';
     if (iconoGithub) iconoGithub.src = 'assets/githubIconClaro.png';
-    if (iconoLogout) iconoLogout.src = 'assets/logOutClaro.jpg';
+    if (iconoLogout) iconoLogout.src = 'assets/logOutClaro.png';
     switchTema.checked = true;
   }
 
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (switchTema.checked) {
       linkTema.href = 'css/estiloClaro.css';
       if (iconoGithub) iconoGithub.src = 'assets/githubIconClaro.png';
-      if (iconoLogout) iconoLogout.src = 'assets/logOutClaro.jpg';
+      if (iconoLogout) iconoLogout.src = 'assets/logOutClaro.png';
       localStorage.setItem('tema', 'claro');
     } else {
       linkTema.href = 'css/estiloOscuro.css';

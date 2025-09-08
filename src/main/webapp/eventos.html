@@ -72,9 +72,9 @@
 								class="form-check-label btnMenu" for="switchCheckChecked"></label>
 						</div>
 						<a class="nav-link btnMenu btnUsuario">ADMIN</a> <a
-							class="nav-link btnMenu"><img id="iconoLogout"
-							src="assets/logOutClaro.jpg" class="img-fluid logOut"
-							alt="Cerrar sesión"></a>
+							href="index.html" class="nav-link btnMenu"><img
+							id="iconoLogout" src="assets/logOutClaro.png"
+							class="img-fluid logOut" alt="Cerrar sesión"></a>
 					</div>
 				</div>
 			</div>
@@ -190,7 +190,7 @@ switchTema.checked = false;
 } else {
 linkTema.href = 'css/estiloClaro.css';
 iconoGithub.src = 'assets/githubIconClaro.png';
-iconoLogout.src = 'assets/logOutClaro.jpg';
+iconoLogout.src = 'assets/logOutClaro.png';
 switchTema.checked = true;
 }
 
@@ -198,7 +198,7 @@ switchTema.addEventListener('change', () => {
 if (switchTema.checked) {
 linkTema.href = 'css/estiloClaro.css';
 iconoGithub.src = 'assets/githubIconClaro.png';
-iconoLogout.src = 'assets/logOutClaro.jpg';
+iconoLogout.src = 'assets/logOutClaro.png';
 localStorage.setItem('tema', 'claro');
 } else {
 linkTema.href = 'css/estiloOscuro.css';

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .background {
-	background-color: #ffffff;
+	background-color: #f9f9f4;
 }
 
 .btnMenu {
@@ -21,18 +21,18 @@
 }
 
 .btnUsuario {
-	color: #d73800;
-	background-color: #ffdddd;
+	color: #333333;
+	background-color: #f9f9f4;
 	border-radius: 0.3125rem;
 }
 
 .btnMenu:hover {
-	background-color: #ffdddd;
-	color: #bf2e25;
+	background-color: #333333;
+	color: #ffdddd;
 }
 
 .barraMenu {
-	background-color: #d73800;
+	background-color: white;
 	width: 100%;
 	padding: 0.625rem 0.9375rem;
 	display: flex;
@@ -214,7 +214,7 @@
 }
 
 .tabs h3.active {
-	background-color: #0a4159;
+	background-color: #beab72;
 	color: #ffffff;
 	font-weight: bold;
 }
@@ -379,7 +379,7 @@
 }
 
 .btnIniciarSesion {
-	background-color: #0a4159;
+	background-color: #beab72;
 	color: white;
 	border: none;
 	padding: 0.5rem 1rem;
@@ -390,7 +390,7 @@
 }
 
 .btnIniciarSesion:hover {
-	background-color: #083648;
+	background-color: #beab72;
 }
 
 @media ( max-width : 768px) {
@@ -443,7 +443,7 @@
 .card-libro .card-title {
 	font-size: 1rem;
 	font-weight: bold;
-	color: #0a4159;
+	color: #beab72;
 	margin-bottom: 0.5rem;
 }
 
@@ -605,7 +605,7 @@ ul {
 
 .day-event {
 	font-size: 10px;
-	color: #0a4159;
+	color: #beab72;
 	background-color: #d0e7f3;
 	padding: 2px 4px;
 	border-radius: 4px;
