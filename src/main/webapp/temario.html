@@ -81,6 +81,98 @@
 		</nav>
 	</header>
 
+
+	<button type="button" class="btn btn-primary" data-toggle="modal"
+		data-target=".bd-example-modal-lg">Administrar temario</button>
+
+	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+		aria-labelledby="myLargeModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<form id="crud-form">
+					<label for="tema">Tema/Algoritmo:</label> <input type="text"
+						id="tema" name="tema" required> <label for="tipo">Tipo:</label>
+					<input type="text" id="tipo" name="tipo" required> <label
+						for="link">Link:</label> <input type="url" id="link" name="link"
+						required>
+
+					<button type="button" data-toggle="modal"
+						data-target=".bd-example-modal-lg">Añadir</button>
+
+					<div class="modal fade bd-example-modal-lg" tabindex="-1"
+						role="dialog" aria-labelledby="myLargeModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<form id="form-crear">
+									<h3>Añadir Tema/Algoritmo</h3>
+
+									<label for="tema">Tema/Algoritmo:</label> <input type="text"
+										id="tema" name="tema" required> <label for="tipo">Tipo:</label>
+									<input type="text" id="tipo" name="tipo" required> <label
+										for="link">Link:</label> <input type="url" id="link"
+										name="link" required>
+
+									<button type="submit">Añadir</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+
+
+					<button type="button" data-toggle="modal"
+						data-target=".bd-example-modal-lg">Actualizar</button>
+
+
+					<div class="modal fade bd-example-modal-lg" tabindex="-1"
+						role="dialog" aria-labelledby="myLargeModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<form id="form-actualizar">
+									<label for="temario-select">Elegir temario:</label> <select
+										id="temario-select" onchange="cargarDatosTemario()">
+										<option value="">-- Selecciona un temario --</option>
+									</select> <label for="tipo">Tipo:</label> <input type="text" id="tipo"
+										name="tipo" required> <label for="link">Link:</label>
+									<input type="url" id="link" name="link" required>
+
+									<button type="button" onclick="actualizarTemario()">Actualizar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<button type="button" data-toggle="modal"
+						data-target=".bd-example-modal-lg">Eliminar</button>
+
+
+
+
+					<div class="modal fade bd-example-modal-lg" tabindex="-1"
+						role="dialog" aria-labelledby="myLargeModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<form id="form-eliminar">
+									<label for="temario-eliminar">Selecciona el temario a
+										eliminar:</label> <select id="temario-eliminar">
+										<option value="">-- Selecciona un temario --</option>
+									</select>
+
+									<button type="button" onclick="eliminarTemario()">Eliminar</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
 	<div class="container containerTemario">
 		<div class="tabs">
 			<h3 class="active">Todo el temario</h3>
@@ -184,7 +276,80 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+const temarios = [
+  { tema: "Ordenamiento Burbuja", tipo: "Algoritmo", link: "https://ejemplo.com/burbuja" },
+  { tema: "Árboles Binarios", tipo: "Estructura", link: "https://ejemplo.com/arboles" },
+  { tema: "Integrales Definidas", tipo: "Cálculo", link: "https://ejemplo.com/integrales" }
+];
+
+const select = document.getElementById("temario-select");
+temarios.forEach((t, index) => {
+  const option = document.createElement("option");
+  option.value = index;
+  option.textContent = t.tema;
+  select.appendChild(option);
+});
+
+function cargarDatosTemario() {
+  const index = select.value;
+  if (index !== "") {
+    const temario = temarios[index];
+    document.getElementById("tipo").value = temario.tipo;
+    document.getElementById("link").value = temario.link;
+  } else {
+    document.getElementById("tipo").value = "";
+    document.getElementById("link").value = "";
+  }
+}
+
+function actualizarTemario() {
+  const index = select.value;
+  if (index !== "") {
+    temarios[index].tipo = document.getElementById("tipo").value;
+    temarios[index].link = document.getElementById("link").value;
+    alert("Temario actualizado correctamente.");
+  } else {
+    alert("Por favor selecciona un temario para actualizar.");
+  }
+}
+
+
+const temarios = [
+  { tema: "Ordenamiento Burbuja", tipo: "Algoritmo", link: "https://ejemplo.com/burbuja" },
+  { tema: "Árboles Binarios", tipo: "Estructura", link: "https://ejemplo.com/arboles" },
+  { tema: "Integrales Definidas", tipo: "Cálculo", link: "https://ejemplo.com/integrales" }
+];
+
+const selectEliminar = document.getElementById("temario-eliminar");
+function cargarOpcionesEliminar() {
+  selectEliminar.innerHTML = '<option value="">-- Selecciona un temario --</option>';
+  temarios.forEach((t, index) => {
+    const option = document.createElement("option");
+    option.value = index;
+    option.textContent = t.tema;
+    selectEliminar.appendChild(option);
+  });
+}
+
+function eliminarTemario() {
+  const index = selectEliminar.value;
+  if (index !== "") {
+    const eliminado = temarios.splice(index, 1); 
+    alert(`Temario "${eliminado[0].tema}" eliminado correctamente.`);
+    cargarOpcionesEliminar();
+  } else {
+    alert("Por favor selecciona un temario para eliminar.");
+  }
+}
+
+cargarOpcionesEliminar();
 </script>
+
+
+	</script>
+
+
 
 </body>
 </html>
